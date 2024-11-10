@@ -1,0 +1,7 @@
+{
+  "name": "IonicHealthApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
