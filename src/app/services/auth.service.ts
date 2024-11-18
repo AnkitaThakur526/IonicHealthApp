@@ -7,7 +7,7 @@ import { Preferences } from '@capacitor/preferences';
   providedIn: 'root',
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:5000/api';
+  private baseUrl = 'https://web-service-gxkq.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 

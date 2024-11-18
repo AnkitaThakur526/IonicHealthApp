@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PredictionService {
-  private baseUrl = 'http://localhost:5000/api';
+  private baseUrl = 'https://web-service-gxkq.onrender.com/api';
 
   constructor(private http: HttpClient) {}
 
