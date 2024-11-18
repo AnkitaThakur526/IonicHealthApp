@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Prediction Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="submitForm()">
+    <ion-item>
+      <ion-label position="floating">Age</ion-label>
+      <ion-input [(ngModel)]="age" name="age" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Sex</ion-label>
+      <ion-select [(ngModel)]="sex" name="sex" required>
+        <ion-select-option value="Male">Male</ion-select-option>
+        <ion-select-option value="Female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">CP</ion-label>
+      <ion-input [(ngModel)]="cp" name="cp" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Trestbps</ion-label>
+      <ion-input [(ngModel)]="trestbps" name="trestbps" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Chol</ion-label>
+      <ion-input [(ngModel)]="chol" name="chol" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">FBS</ion-label>
+      <ion-input [(ngModel)]="fbs" name="fbs" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">RestECG</ion-label>
+      <ion-input [(ngModel)]="restecg" name="restecg" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Thalach</ion-label>
+      <ion-input [(ngModel)]="thalach" name="thalach" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Exang</ion-label>
+      <ion-input [(ngModel)]="exang" name="exang" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Oldpeak</ion-label>
+      <ion-input [(ngModel)]="oldpeak" name="oldpeak" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Slope</ion-label>
+      <ion-input [(ngModel)]="slope" name="slope" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">CA</ion-label>
+      <ion-input [(ngModel)]="ca" name="ca" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Thal</ion-label>
+      <ion-input [(ngModel)]="thal" name="thal" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Submit Prediction</ion-button>
+  </form>
+</ion-content>

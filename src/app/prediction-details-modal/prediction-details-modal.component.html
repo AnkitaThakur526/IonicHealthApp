@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Prediction Details</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Display detailed data of the record -->
+  <ion-card *ngIf="record">
+    <ion-card-header>
+      <ion-card-title>Details</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Age:</strong> {{ record.input_data.age }}</p>
+      <p><strong>Sex:</strong> {{ record.input_data.sex }}</p>
+      <p><strong>CP:</strong> {{ record.input_data.cp }}</p>
+      <p><strong>Exang:</strong> {{ record.input_data.exang }}</p>
+      <p><strong>FBS:</strong> {{ record.input_data.fbs }}</p>
+      <p><strong>Old Peak:</strong> {{ record.input_data.oldpeak }}</p>
+      <p><strong>Rest ECG:</strong> {{ record.input_data.restecg }}</p>
+      <p><strong>Slope:</strong> {{ record.input_data.slope }}</p>
+      <p><strong>Thal:</strong> {{ record.input_data.thal }}</p>
+      <p><strong>Thalach:</strong> {{ record.input_data.thalach }}</p>
+      <p><strong>Trestbps:</strong> {{ record.input_data.trestbps }}</p>
+      <p><strong>Prediction Result:</strong> {{ record.prediction_result }}</p>
+      <p><strong>User:</strong> {{ record.user }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
